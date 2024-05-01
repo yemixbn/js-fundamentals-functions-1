@@ -60,11 +60,12 @@ function countStringsInArray(array) {
 //
 // TODO: write code below
 function addEdwardProperty(obj) {
-  if (!obj.hasOwnProperty('edward')) {
+  if (!Object.prototype.hasOwnProperty.call(obj, 'edward')) {
     obj.edward = 'amazing'
   }
   return obj
 }
+
 // TODO: change each undefined below to be the name of the functions you defined
 module.exports = {
   a: increment, // 1. change undefined to be the name of the function you defined for the first TODO
